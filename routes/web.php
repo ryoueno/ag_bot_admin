@@ -14,3 +14,12 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index');
+
+// Lecture
+Route::resource(
+    'lecture',
+    'LectureController',
+    [
+        'only' => ['index', 'show'],
+    ]
+);

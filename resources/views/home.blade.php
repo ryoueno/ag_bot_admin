@@ -8,7 +8,21 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    You are logged in!
+                    <table class="table">
+                       @forelse($lectures as $lecture)
+                            <tr>
+                                <td>
+                                    <td>
+                                        <a href="{{ route('lecture.show', [$lecture->id]) }}">
+                                            {{ $lecture->name }}
+                                        </a>
+                                    </td>
+                                </td>
+                            </tr>
+                        @empty
+                            <tr><td>登録されていません</td></tr>
+                        @endforelse
+                    </table>
                 </div>
             </div>
         </div>
