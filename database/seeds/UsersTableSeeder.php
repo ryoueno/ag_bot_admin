@@ -18,19 +18,19 @@ class UsersTableSeeder extends Seeder
                 'id'       => 1,
                 'name'     => 'uenoryo1',
                 'email'    => 'ueno1@ueno.com',
-                'password' => 'uenoryo1',
+                'password' => bcrypt('uenoryo1'),
             ],
             [
                 'id'       => 2,
                 'name'     => 'uenoryo2',
                 'email'    => 'ueno2@ueno.com',
-                'password' => 'uenoryo2',
+                'password' => bcrypt('uenoryo2'),
             ],
             [
                 'id'       => 3,
                 'name'     => 'uenoryo3',
                 'email'    => 'ueno3@ueno.com',
-                'password' => 'uenoryo3',
+                'password' => bcrypt('uenoryo3'),
             ],
         ];
 
