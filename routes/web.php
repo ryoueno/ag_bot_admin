@@ -20,6 +20,6 @@ Route::resource(
     'lecture',
     'LectureController',
     [
-        'only' => ['index', 'show'],
+        'only' => ['index', 'show', 'create', 'store'],
     ]
 );
