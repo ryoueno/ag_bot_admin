@@ -24,6 +24,11 @@
                             <tr><td>出席者はいません</td></tr>
                         @endforelse
                     </table>
+                    <div class="panel-body">
+                        <a href="{{ 'reset/' . $lecture->id }}">
+                            <button class="btn btn-primary">出席者をリセット</button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

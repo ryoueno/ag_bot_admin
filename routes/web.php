@@ -23,6 +23,7 @@ Route::resource(
         'only' => ['index', 'show', 'create', 'store'],
     ]
 );
+Route::get('/lecture/reset/{id}', 'LectureController@reset');
 
 // // Attendance
 // Route::resource(
