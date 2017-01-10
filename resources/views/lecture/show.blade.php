@@ -14,7 +14,7 @@
                     <div class="panel-body">
                         <a href="{{ 'change/' . $lecture->id }}">
                             @if($lecture->receptable)
-                                <button class="btn btn-info">出席受付中</button>
+                                <button class="btn btn-warning">出席受付中</button>
                             @else
                                 <button class="btn btn-info">出席者を受け付ける</button>
                                 <div>
