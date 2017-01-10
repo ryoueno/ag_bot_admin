@@ -24,7 +24,7 @@ class AttendanceStoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'lecture_id' => 'required|max:20',
+            'beacon_id'  => 'required|max:50',
             'student_id' => 'required|max:20',
         ];
     }
