@@ -8,6 +8,19 @@
                 <div class="panel-heading">{{ $lecture->name }}</div>
 
                 <div class="panel-body">
+                    <table class="table">
+                       @forelse($attendances as $attendance)
+                            <tr>
+                                <td>
+                                    <td>
+                                        {{ $attendance->student_id }}
+                                    </td>
+                                </td>
+                            </tr>
+                        @empty
+                            <tr><td>出席者はいません</td></tr>
+                        @endforelse
+                    </table>
                 </div>
             </div>
         </div>
