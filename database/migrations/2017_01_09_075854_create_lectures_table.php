@@ -18,6 +18,7 @@ class CreateLecturesTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->string('room_id');
             $table->string('name');
+            $table->boolean('receptable')->default(false);
             $table->timestamps();
         });
     }

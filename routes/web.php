@@ -24,6 +24,7 @@ Route::resource(
     ]
 );
 Route::get('/lecture/reset/{id}', 'LectureController@reset');
+Route::get('/lecture/change/{id}', 'LectureController@changeReceptable');
 
 // // Attendance
 // Route::resource(

@@ -21,6 +21,13 @@ class LectureController extends Controller
         return redirect()->route('lecture.show',  $id);
     }
 
+    public function changeReceptable($id)
+    {
+        $lecture = Lecture::where('id', $id);
+        $lecture->update(['receptable' => !$lecture->first()->receptable]);
+        return redirect()->route('lecture.show',  $id);
+    }
+
     public function show($id)
     {
         return view('lecture.show')->with([
