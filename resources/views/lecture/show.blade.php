@@ -5,7 +5,10 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">{{ $lecture->name }}</div>
+                <div class="panel-heading">
+                    {{ $lecture->name }}
+                    <div class="text-right">教室番号：{{ $lecture->room_id }}</div>
+                </div>
 
                 <div class="panel-body">
                     <table class="table">
