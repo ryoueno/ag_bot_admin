@@ -17,7 +17,7 @@ class CreateAttendancesTable extends Migration
             $table->increments('id');
             $table->integer('lecture_id')->unsigned();
             $table->integer('student_id')->unsigned();
-            $table->boolean('is_acctive');
+            $table->boolean('is_active');
             $table->timestamps();
         });
     }
