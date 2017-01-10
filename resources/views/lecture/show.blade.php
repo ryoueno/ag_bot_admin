@@ -24,12 +24,11 @@
                         </a>
                     </div>
                     <table class="table">
-                       @forelse($attendances as $attendance)
+                        <h4>出席なう</h4>
+                        @forelse($attendances as $attendance)
                             <tr>
                                 <td>
-                                    <td>
-                                        {{ $attendance->student_id }}
-                                    </td>
+                                    {{ $attendance->student_id }}
                                 </td>
                             </tr>
                         @empty
