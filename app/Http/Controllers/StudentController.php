@@ -27,4 +27,14 @@ class StudentController extends Controller
             return "登録されていません";
         }
     }
+
+    public function getStatus($line_id)
+    {
+        $student = Student::where('line_id', $line_id)->first();
+        if ($student) {
+            return $student->status;
+        } else {
+            return [];
+        }
+    }
 }
