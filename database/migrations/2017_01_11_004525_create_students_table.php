@@ -19,7 +19,6 @@ class CreateStudentsTable extends Migration
             $table->string('name');
             $table->string('img');
             $table->integer('status');
-            $table->boolean('is_attend');
             $table->timestamps();
         });
     }

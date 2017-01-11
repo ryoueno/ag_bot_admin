@@ -20,7 +20,6 @@ class StudentsTableSeeder extends Seeder
                 'name'      => "StudentA",
                 'img'       => "http://k.yimg.jp/images/top/sp2/cmn/logo-ns-131205.png",
                 'status'    => 1,
-                'is_attend' => false,
             ],
         ];
 
